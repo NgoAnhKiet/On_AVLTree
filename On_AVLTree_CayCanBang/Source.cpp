@@ -13,7 +13,7 @@ typedef Node* NodePtr;
 //Độ cao
 int height(NodePtr root)
 {
-	if (root == 0) return 0;
+	if (root == NULL) return 0;
 	return root->height;
 }
 
@@ -221,8 +221,8 @@ void preOrder(NodePtr root)
 int main()
 {
 	NodePtr root = NULL;
-	const int MAX = 11;
-	int array[] = { 10,12,1,14,6,5,8,15,3,9,7 };
+	const int MAX = 10;
+	int array[] = {4,7,8,12,20,25,31,6,14,5};
 	for (int i = 0; i < MAX; i++)
 	{
 		insert(root, array[i]);
